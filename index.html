@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body> 
+
+  
+  <div class="box">
+    <h1>Kanban</h1>
+
+        <div class="addTask">
+          <input class="new-task" type="text" id="new-task01" placeholder="Add a New Task..."> 
+          <button class="adicionar" type="button">Add Task</button>
+        </div>
+
+    <div class="kanban">
+
+      <!-- TO DO -->
+      <div class="container-add">
+        <div class="containerAddTask">
+          <h2>To Do</h2>
+          <div class="toDo">
+            <ul class="taskList">
+              
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- IN PROGRESS -->
+      <div class="container-add">
+        <div class="containerAddTask">
+          <h2>In Progress</h2>
+          <div class="toDo">
+            <ul class="taskList">
+              
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- COMPLETED -->
+      <div class="container-add">
+        <div class="containerAddTask">
+          <h2>Completed</h2>
+          <div class="toDo">
+            <ul class="taskList">
+              
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+  </div>
+  
+  <script src="./toDo.js"></script>
+  <script src="./drag.js"></script>
+</body>
+</html>
