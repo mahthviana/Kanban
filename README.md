@@ -5,8 +5,8 @@ O projeto em questão é um kanban (uma ferramenta de aumento de produtividade),
 
 ## Tecnologias
 
--HTML
--CSS
--Javascript
--Github
+-HTML \
+-CSS \
+-Javascript \
+-Github \
 
