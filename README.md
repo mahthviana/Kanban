@@ -8,5 +8,5 @@ O projeto em questão é um kanban (uma ferramenta de aumento de produtividade),
 -HTML \
 -CSS \
 -Javascript \
--Github \
+-Github 
 
