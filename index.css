@@ -23,6 +23,8 @@ body {
   justify-content: center;
   flex-direction: column;
 
+  position: relative;
+  bottom: 50px;
   animation: fadeIn 0.6s ease-in-out;
 }
 
@@ -39,11 +41,7 @@ input {
 
 }
 
-ul {
-  list-style-type: none;  
-}
-
-li {
+p.task {
   background-color: #ddd;
   color: #000;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -56,7 +54,7 @@ li {
 
   word-break: break-all;
 
-  margin-top: 12px;
+  /* margin-bottom: 12px; */
 
   list-style: none;
   display: flex;
@@ -66,11 +64,16 @@ li {
   width: 255px;
 
   position: relative;
-  right: 29px;
+  bottom: 16px;
+  left: 1px;
 
 }
 
-li.completed {
+.task {
+  transition: transform 0.3s ease-in-out;
+}
+
+p.completed {
   text-decoration: line-through;
   color: #aaa;
 }
@@ -119,12 +122,30 @@ li.completed {
 .concluded, .inProgress, .toDo {
   width: calc(100% - 22px);
 
-  border-radius: 5px;
+  border-radius: 5px 5px 2px 2px;
   font-size: 16px;
 
   width: 220px;
 
+  background-color: #fff;
+  height: 350px;
+
+  width: 280px;
+
 }
+
+.todo {
+  background-color: #ddd;
+}
+
+.inProgress {
+  background-color: #ffc;
+}
+
+.concluded {
+  background-color: #cff;
+}
+
 
 .addTask {
   display: flex;
@@ -171,6 +192,14 @@ button.delete {
 button.delete:hover {
   background-color: #a83228;
 }
+
+.drag {
+  scale: 1.05;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: #000;
+  color: #fff;
+}
+
 
 
 
